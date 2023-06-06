@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ApiTable/static/css/main.31d6cfe0.css",
+    "main.js": "/ApiTable/static/js/main.7dd2678a.js",
+    "static/js/787.22dece90.chunk.js": "/ApiTable/static/js/787.22dece90.chunk.js",
+    "index.html": "/ApiTable/index.html",
+    "main.7dd2678a.js.map": "/ApiTable/static/js/main.7dd2678a.js.map",
+    "787.22dece90.chunk.js.map": "/ApiTable/static/js/787.22dece90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.7dd2678a.js"
+  ]
+}
