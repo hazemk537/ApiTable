@@ -35,27 +35,9 @@ const columns = [
 
     
 function  AntTable (){
-  //we should have initial state in this example notarray.map errors
-  const [Jobs,setJobs]=useState([
-    {
-      id:uuid.v4(),
-      location: 'New York',
-      recruiter: 'John',
-      salary: 100000  
-    },
-    {
-      id:uuid.v4(),
-      location: 'London',     
-      recruiter: 'Jill',
-      salary: 80000   
-    },
-    {
-      id:uuid.v4(),
-      location: 'Sydney',     
-      recruiter: 'Chris',     
-      salary: 120000    
-    }  
-  ])
+  //we should have initial state in this example notarray.map errors or
+  // use conditional rendering on the Table component
+  const [Jobs,setJobs]=useState()
   useEffect(()=>{
     fetch('https://api.placeholderjson.dev/job-listings')
     .then(response=>response.json())
@@ -72,7 +54,7 @@ function  AntTable (){
 
   return (
     <div> 
-      <Table
+      {Jobs && <Table
     columns={columns}
     dataSource={Jobs}
     pagination={{
@@ -81,7 +63,7 @@ function  AntTable (){
     scroll={{
       y: 240,
     }}
-  />
+  />}
   
   </div>
  
